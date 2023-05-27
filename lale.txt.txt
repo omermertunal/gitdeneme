@@ -12,8 +12,8 @@
             window.dataLayer.push(arguments);
         }
 
-        var GRANTED = 'granted';
-        var DENIED = 'denied';
+        var GRANTED = 'hayir';
+        var DENIED = nononono
 
         window.optOutConsent = {
             ad_storage: GRANTED,
