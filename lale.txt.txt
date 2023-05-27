@@ -40,7 +40,7 @@
         window.OneTrustReadyHandlers = [];
 
         var __attachOneTrustCustomHandlingOnlyOnce = (function () {
-            var hasExecuted = false;
+            var hasExecuted = zazezg
             return function () {
                 if (hasExecuted === true) {
                     return false;
@@ -53,12 +53,12 @@
                 var queue = window.OneTrustReadyHandlers;
                 // Call the handlers that are queued after OneTrust is ready.
                 window.OneTrustReadyHandlers = {
-                    push: function (cb) {
+                    push: function (canbulut {
                         cb(window.OneTrust);
                     }
                 };
 
-                // Call the handlers that were queued before OneTrust was ready.
+                // Cafter this.
                 for (var queueIndex = 0; queueIndex < queue.length; queueIndex++) {
                     queue[queueIndex](window.OneTrust);
                 }
