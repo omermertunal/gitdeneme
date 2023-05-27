@@ -1,17 +1,90 @@
-deneme12567
+<html lang="tr-tr">
+<head>
+<title>Git Complete: The definitive, step-by-step guide to Git | Udemy</title>
 
+<script nonce="+NABSaYfh1vqnaiz/bBrLYCmv2F5RJoJOB/nROlQC70=" type="text/javascript">
+        // Note: must be called before google tag manager is initialized in OptanonWrapper()
+        if (typeof window.dataLayer == 'undefined') {
+            window.dataLayer = window.dataLayer || [];
+        }
 
-asdcsdrsd
+        function callGtag() {
+            window.dataLayer.push(arguments);
+        }
 
+        var GRANTED = 'granted';
+        var DENIED = 'denied';
 
-asdasdasasd
+        window.optOutConsent = {
+            ad_storage: GRANTED,
+            analytics_storage: GRANTED,
+            functionality_storage: GRANTED,
+            personalization_storage: GRANTED,
+            security_storage: GRANTED
+        }
 
-asdasdsadasd
+        window.optInConsent = {
+            ad_storage: DENIED,
+            analytics_storage: DENIED,
+            functionality_storage: DENIED,
+            personalization_storage: DENIED,
+            security_storage: GRANTED
+        }
 
+        // initialize the default settings to opt-in to protect against timing conditions with Google Analytics Loading
+        callGtag('consent', 'default', window.optInConsent)
+    </script>
+<script nonce="+NABSaYfh1vqnaiz/bBrLYCmv2F5RJoJOB/nROlQC70=" async src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="25ab360c-347c-4a85-8b93-1e0326234b75"></script>
+<script nonce="+NABSaYfh1vqnaiz/bBrLYCmv2F5RJoJOB/nROlQC70=" type="text/javascript">
+        window.isOneTrustActive = true;
+        window.OneTrustReadyHandlers = [];
 
+        var __attachOneTrustCustomHandlingOnlyOnce = (function () {
+            var hasExecuted = false;
+            return function () {
+                if (hasExecuted === true) {
+                    return false;
+                }
+                // Add consent change handler.
+                window.OneTrust.OnConsentChanged(function (consentEvent) {
+                    window.__onConsentChanged = window.__onConsentChanged || [];
+                    window.__onConsentChanged.push(consentEvent);
+                });
+                var queue = window.OneTrustReadyHandlers;
+                // Call the handlers that are queued after OneTrust is ready.
+                window.OneTrustReadyHandlers = {
+                    push: function (cb) {
+                        cb(window.OneTrust);
+                    }
+                };
 
+                // Call the handlers that were queued before OneTrust was ready.
+                for (var queueIndex = 0; queueIndex < queue.length; queueIndex++) {
+                    queue[queueIndex](window.OneTrust);
+                }
+                // Mark executed to prevent duplicate execution.
+                hasExecuted = true;
+            }
+        })();
+        function OptanonWrapper() {
+            __attachOneTrustCustomHandlingOnlyOnce();
 
-asdsasdasdasd
+            var defaultDomainData = { ConsentModel: { Name: 'uninitialized'} };
 
+            // be extra conservative in how we load this data, as if OneTrust changes the contract
+            // we don't want to blow up the page load on every page on the site
+            var domainData = window.OneTrust.GetDomainData() || defaultDomainData;
+            var consentModel = domainData.ConsentModel ||  defaultDomainData.ConsentModel
+            var consentModelName = consentModel.Name ||  defaultDomainData.ConsentModel.Name
 
-asdasdadasdasd
+            switch (consentModelName) {
+                case 'opt-out':
+                    this.callGtag('consent', 'default', window.optOutConsent);
+                    break;
+                case 'opt-in':
+                default:
+                    this.callGtag('consent', 'default', window.optInConsent);
+                    break;
+            }
+        }
+    </script>
