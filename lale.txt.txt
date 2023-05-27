@@ -1,6 +1,6 @@
 <html lang="tr-tr">
 <head>
-<title>Git Complete: The definitive, step-by-step guide to Git | Udemy</title>
+<title>Burasi degisitirilmis bbir metindir</title>
 
 <script nonce="+NABSaYfh1vqnaiz/bBrLYCmv2F5RJoJOB/nROlQC70=" type="text/javascript">
         // Note: must be called before google tag manager is initialized in OptanonWrapper()
@@ -24,9 +24,9 @@
         }
 
         window.optInConsent = {
-            ad_storage: DENIED,
+            ad_storage: FALSE
             analytics_storage: DENIED,
-            functionality_storage: DENIED,
+            functionality_storage: FALSE,
             personalization_storage: DENIED,
             security_storage: GRANTED
         }
