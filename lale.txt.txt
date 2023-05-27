@@ -25,7 +25,7 @@
 
         window.optInConsent = {
             ad_storage: FALSE
-            analytics_storage: DENIED,
+            analytics_storage: false
             functionality_storage: FALSE,
             personalization_storage: DENIED,
             security_storage: GRANTED
